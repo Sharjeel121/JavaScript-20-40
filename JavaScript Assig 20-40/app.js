@@ -449,6 +449,12 @@
 
 // 6. Write a function that computes factorial of a number.
 
+// var a = 1
+// var inp = +prompt('enter a number')
+// for(var i = 1 ; i<=inp; i++){
+//     a = a * i
+// }
+// console.log(a)
 // 7. Write a function that take start and end number as inputs
 // & display counting in your browser.
 
