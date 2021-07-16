@@ -491,3 +491,343 @@
 // }
 // rec()
 
+
+
+
+
+
+//                        REMAINING WORK
+
+
+//                         CHAPTER#20-25
+// 13. Write a program to take user input and store username in a 
+// variable. If the username contains any special symbol among 
+// [@ . , !], prompt the user to enter a valid username. 
+// For character codes of [@ . 
+
+// var username = prompt('Enter your name')
+// for(i = 0; i < username.length; i++){
+// if(username[i] == '!' || username[i] == '@' || username[i] == '.' || username[i] == ','){
+//         alert('Please Enter valid name')
+//         break
+// }
+// }
+
+// 15. Write a program to take password as an input from user. 
+// The password must qualify these requirements: a. It should 
+// contain alphabets and numbers b. It should not start with a
+//  number c. It must at least 6 characters long If the password 
+//  does not meet above requirements, prompt the user to enter a 
+//  valid password. For character codes of a-z, A-Z & 0-9, refer 
+//  to ASCII table at the end of this document. 
+
+// var cap;
+// var sml;
+// var num;
+//  var pass = prompt('Set password')
+//  for(var i = 0; i < pass.length; i++){
+//          if(pass.length < 6){
+//                  alert('Password must be atleast 6 word')
+//                  break;
+//          }
+//  }
+//  for(var j = 65; j < 91; j++){
+//         if(String.fromCharCode(j)){
+//                 cap = cap + 1;
+//         }
+// }
+// for(var k = 97; k < 123; k++){
+//         if(String.fromCharCode(k)){
+//                 sml = sml + 1;
+//         }
+// }
+// for(var l = 48; l < 58; l++){
+//         if(String.fromCharCode(l)){
+//                 num = num + 1;
+//         }
+// }
+// if(cap > 0 && sml > 0 && num > 0 && pass.length > 5 && ( (pass[0]>String.fromCharCode(64) && pass[0]<String.fromCharCode(91) ) || (pass[0]>String.fromCharCode(96) && pass[0]<String.fromCharCode(123) ) ) ) {
+//         alert('password reset')
+// }
+// else{
+//         alert('Please enter valid password')
+// }
+
+
+// 16. Write a program to convert the following string to an array 
+// using string split method. var university = “University of Karachi”;
+//  Display the elements of array in your browser. 
+
+// var university = 'University of Karachi';
+// const myArr = university.split();
+// for(var i = 0; i < myArr.length; i++){
+//         document.write(myArr[i] + '<br>') 
+// }
+
+
+//                             CHAPTER#35-38
+
+// 3. Write a function that adds two numbers (input by user) and returns
+//  the sum of two numbers. 
+
+        // function sum(x,y){
+        //         var s = x + y
+        //         return s
+        // }
+        // var a = prompt('first number')
+        // a = +a
+        // var b = prompt('Second number')
+        // b = +b
+        // document.write('Sum is : ' + sum(a,b))
+
+// 10. Write a JavaScript function that checks whether a passed string 
+// is palindrome or not?   A palindrome is word, phrase, or sequence 
+// that reads the same backward as forward, e.g., madam. 
+
+        // function pal(s){
+        //                 if(s == s.split('').reverse().join('') ){
+        //                         document.write('Palindrome word')
+        //                 }
+                   
+        //         }
+        // var a = prompt('Enter any word')
+        // pal(a)
+ 
+// 11. Write a JavaScript function that accepts a string as a parameter 
+// and converts the first letter of each word of the string in upper 
+// case.  EXAMPLE STRING : 'the quick brown fox'  EXPECTED OUTPUT : 
+// 'The Quick Brown Fox' 
+
+        // function upp(s){
+        //         for(var i = 0; i < s.length; i++){
+        //                 var sp = charCodeAt(32)
+        //                 if(s[i] == sp){
+        //                         s[i+1] = s[i+1].toUpperCase()
+        //                 }
+        //        document.write(s[i])
+        //         }
+        
+        // }
+        // var a = prompt('Enter sentence')
+        // upp(a)
+ 
+ 
+// 13. Write a JavaScript function that accepts two arguments, a string 
+// and a letter and the function will count the number of 
+// occurrences of the specified letter within the string.  Sample 
+// arguments : 'JSResourceS.com', 'o'  
+ 
+        // function check(s,c){
+        //         var flag = 0
+        //         for(var i = 0; i < s.length; i++){
+        //                 if(s[i] == c){
+        //                         flag = flag + 1
+        //                 }
+        //         }
+        //         document.write(flag)
+        // }
+        // var s = prompt('Sentence')
+        // var c = prompt('character')
+        // check(s,c)
+ 
+ 
+ 
+// 14. The Geometrizer Create 2 functions that calculate properties of a 
+// circle, using the definitions here. Create a function called 
+// calcCircumference: • Pass the radius to the function. • Calculate 
+// the circumference based on the radius, and output "The circumference 
+// is NN". Create a function called calcArea: • Pass the radius to the 
+// function. • Calculate the area based on the radius, and output "The 
+// area is NN". 
+ 
+// Circumference of circle    =     2πr Area of circle       =     πr2
+
+        // function calcCircumference(r){
+        //         document.write('The circumference of a circle is ' + (2*3.142*r))
+        // }
+        // function calcArea(r){
+        //         document.write('<br>The area is ' + (3.142*r*r))
+        // }
+        // var out = prompt('radius')  
+        // calcCircumference(out)
+        // calcArea(out)
+
+
+
+// Chapter#38-42
+
+// 1. Write a custom function power ( a, b ), to calculate the value of 
+// a raised to b. 
+
+        // function power(a,b){
+        //         var r = Math.pow(a, b)
+        //         document.write(r)
+        // }
+        // var a = prompt('Suare of ')
+        // a = +a
+        // var b = prompt('power')
+        // b = +b
+        // power(a,b)
+
+// 2. Any year is entered through the keyboard. Write a 
+// function to determine whether the year is a leap year or not. Leap 
+// years ..., 2012, 2016, 2020, … 
+
+        // function lyear(y){
+        //         if(y % 4 == 0){
+        //                 document.write(y + ' is leap year')
+        //         }
+        //         else{
+        //                 document.write(y + ' is Not a leap year')
+        //         }
+        // }
+        // var year = prompt('Enter any year')
+        // lyear(year)
+
+// 3. If the lengths of the sides of a triangle are denoted by a, b, 
+// and c, then area of triangle is given by 
+// area = S(S − a)(S − b)(S − c) where, S = ( a + b + c ) / 2 
+// Calculate area of triangle using 2 functions 
+
+        // function s(a,b,c){
+        //         var s = (a + b + c) / 2 
+        //         area(s)
+        //         function area(p){
+        //                 var area = s * (s - a) * (s - b) * (s - c)
+        //                 document.write('Area of a triangle is ' + area)
+        //         }
+        // }
+        // s(2,3,3)
+
+// 4. Write a function that receives marks received by a student in 3 
+// subjects and returns the average and percentage of these marks. 
+// there should be 3 functions one is the mainFunction and other are 
+// for average and percentage. Call those functions from mainFunction 
+// and display result in mainFunction. 
+ 
+        // function mainFunction(m,e,u){
+        //         var sum = m + u + e
+        //         document.write('Avergae marks is ' + average(sum))
+        //         document.write('<br>Percentage is ' + percentage(sum))
+        //         function average(sum){
+        //                 var avg = sum / 3
+        //                 return avg
+        //         } 
+        //         function percentage(sum){
+        //                 var per = sum / 300 * 100
+        //                 return per
+        //         }
+        // }
+        // var math = +prompt('Marks of math')
+        // var eng = +prompt('Marks of english')
+        // var urdu = +prompt('Marks of urdu') 
+        // mainFunction(math,eng,urdu)
+
+// 5. You have learned the function indexOf. Code your own custom 
+// function that will perform the same functionality. You can code
+//  for single character as of now. 
+ 
+        // function index(a,c){
+        //         for(var i = 0; i < a.length; i++){
+        //                 if(a[i] == c){
+        //                         document.write('Index of ' + c + ' is ' + i)
+        //                 }
+        //         }
+        // }
+        // var a = prompt('Enter words')
+        // var b = prompt('Index of')
+        // index(a,b)
+
+// 6. Write a function to delete all vowels from a sentence. Assume 
+// that the sentence is not more than 25 characters long. 
+
+        // function vowel(a){
+        //         for(var i = 0; i < a.length; i++){
+        //                 if(a[i] == 'a' || a[i] == 'e' || a[i] == 'i' || a[i] == 'o' || a[i] == 'u' || a[i] == 'A' || a[i] == 'E' || a[i] == 'I' || a[i] == 'O' || a[i] == 'U'){
+        //                         continue
+        //                 }
+        //                 document.write(a[i])
+        //         }
+        // }
+        // var sen = prompt('Enter sentence')
+        // vowel(sen)
+ 
+// 7. Write a function with switch statement to count the number of 
+// occurrences of any two vowels in succession in a line of text. 
+// For example, in the sentence 
+
+// “Pleases read this application and give me gratuity” Such occurrences
+//  are ea, ea, ui. 
+ 
+
+        // function twoVowel(a){
+        //         for(var i = 0; i < a.length; i++){
+        //                 if( (a[i] == 'a' || a[i] == 'e' || a[i] == 'i' || a[i] == 'o' || a[i] == 'u' || a[i] == 'A' || a[i] == 'E' || a[i] == 'I' || a[i] == 'O' || a[i] == 'U') && (a[i+1] == 'a' || a[i+1] == 'e' || a[i+1] == 'i' || a[i+1] == 'o' || a[i+1] == 'u' || a[i+1] == 'A' || a[i+1] == 'E' || a[i+1] == 'I' || a[i+1] == 'O' || a[i+1] == 'U') ){
+        //                         document.write(a[i] + a[i+1] + '<br>')
+        //                 }
+        //         }
+        // }
+        // var sen = prompt('Enter sentence')
+        // twoVowel(sen)
+
+
+// 8. The distance between two cities (in km.) is input through the 
+// keyboard. Write four functions to convert and print this distance 
+// in meters, feet, inches and centimeters. 
+ 
+        // function meter(km){
+        //         var metre = km * 1000
+        //         document.write(metre + ' meters <br>')
+        // }
+        // function inch(km){
+        //         var metre = km * 1000 * 36
+        //         document.write(metre + ' inches <br>')
+        // }
+        // function feet(km){
+        //         var metre = km * 1000 * 3 
+        //         document.write(metre + ' feets <br>')
+        // }
+        // function centimeters(km){
+        //         var metre = km * 1000 * 100
+        //         document.write(metre + ' centimeters <br>')
+        // }
+        // var km = +prompt("Enter kilometer beteen to cities ")
+        // meter(km)
+        // inch(km)
+        // feet(km)
+        // centimeters(km)
+
+// 9. Write a program to calculate overtime pay of employees. Overtime 
+// is paid at the rate of Rs. 12.00 per hour for every hour worked 
+// above 40 hours. Assume that employees do not work for fractional 
+// part of an hour. 
+
+        // function salery(hour){
+        //         if(hour > 40){
+        //                 hour = hour - 40
+        //         var overtime = hour * 12
+        //         document.write('Overtime amount is RS#' + overtime)
+        //         }
+        // }
+        // var s = +prompt('working hour')
+        // salery(s)
+ 
+// 10. A cashier has currency notes of denominations 10, 50 and 100. 
+// If the amount to be withdrawn is input through the keyboard in 
+// hundreds, find the total number of currency notes of each 
+// denomination the cashier will have to give to the withdrawer. 
+
+        // function bank(amount){
+        //         var hun = amount / 100
+        //         hun = Math.floor(hun)
+        //         var f = amount % 100
+        //         var fifty = f / 50
+        //         fifty = Math.floor(fifty)
+        //         var t = f % 50
+        //         var ten = t / 10
+        //         ten = Math.floor(ten)
+        //         document.write(hun + ' Hundreds notes<br>' + fifty + ' Fiftys notes <br>' + ten + ' Tens notes')
+
+        // }
+        // var cash = +prompt('Enter Amount')
+        // bank(cash)
